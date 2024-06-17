@@ -6,6 +6,9 @@ class Point:
         self.x = x
         self.y = y
 
+    def __repr__(self):
+        return f"Point({self.x}, {self.y})"
+
 
 class Line:
     def __init__(self, p1: Point, p2: Point):
@@ -18,6 +21,9 @@ class Line:
                 self.p2.x, self.p2.y,
                 fill=fill_color, width=2
         )
+
+    def __repr__(self):
+        return f"Line({self.p1}, {self.p2})"
 
 
 class Window:
